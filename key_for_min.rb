@@ -8,6 +8,7 @@ def key_for_min_value(name_hash)
     min_value = Float::INFINITY
     min_value_key = ""
     hash_values = name_hash.collect { |key, value| value }
+    
     name_hash.each do |key, value|
       hash_values.each do |num|
         if value < num && value < min_value
@@ -16,6 +17,7 @@ def key_for_min_value(name_hash)
         end
       end
     end
+    
     min_value_key
   end
 end
