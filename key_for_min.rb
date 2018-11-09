@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
     return nil
   else
     min_value = 0
-    min_value_key = ""
+    min_value_key = :random
     hash_values = name_hash.collect { |key, value| value }
     name_hash.each { |key, value|
       hash_values.each { |h_value|
