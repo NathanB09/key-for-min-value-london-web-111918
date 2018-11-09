@@ -10,7 +10,6 @@ def key_for_min_value(name_hash)
     hash_values = name_hash.collect { |key, value| value }
     name_hash.find do |key, value|
       puts key
-      puts value
     end
     min_value_key
   end
