@@ -11,11 +11,11 @@ def key_for_min_value(name_hash)
       hash_values.each { |h_value|
         if value < h_value
           min_value = value
-        end 
+        end
       }
       if min_value == value
         return key
-      end 
+      end
     }
   end
 end
