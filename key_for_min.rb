@@ -10,7 +10,6 @@ def key_for_min_value(name_hash)
     hash_values = name_hash.collect { |key, value| value }
     name_hash.each do |key, value|
       hash_values.each do |num|
-        min_value = num
         if value < num && value < min_value
           min_value = value
           min_value_key = key
