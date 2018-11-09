@@ -9,7 +9,7 @@ def key_for_min_value(name_hash)
     min_value_key = ""
     hash_values = name_hash.collect { |key, value| value }
     name_hash.each do |key, value|
-      return hash_values.find { |num| num < value }
+      return name_hash.find { |num| num < value }
     end
     min_value_key
   end
